@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const footerLinks = [
     { path: '/disclaimer', name: 'Disclaimer' },
-    // { path: '/grievance', name: 'Grievance' },
-    // { path: '/privacy-policy', name: 'Privacy Policy' },
-    // { path: '/terms-of-service', name: 'Terms of Service' },
-    // { path: '/code-of-business', name: 'Code of Business Conduct' },
+    { path: '/grievance', name: 'Grievance' },
+    { path: '/privacy-policy', name: 'Privacy Policy' },
+    { path: '/terms-of-service', name: 'Terms of Service' },
+    { path: '/code-of-business', name: 'Code of Business Conduct' },
   ];
 
   return (
@@ -61,15 +61,15 @@ const Footer = () => {
           >
             <h3>Contact Us</h3>
             <ul className="contact-info">
-              <li><FaPhone /> +1 (234) 567-8900</li>
-              <li><FaEnvelope /> info@melah-tech.com</li>
-              <li><FaMapMarkerAlt /> 123 Tech Street, Digital City, DC 10001</li>
+              <li><FaPhone /> +237670344547 / +237696013948 </li>
+              <li><FaEnvelope /> info@melah.cm</li>
+              <li><FaMapMarkerAlt /> Sonac Street Bamenda</li>
             </ul>
           </motion.div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Melah Information Technologies CO LTD. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Melah Information Technologies Co. LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import image from '../assets/images/logo.jpeg'
 
 const AboutSection = () => {
   return (
@@ -20,14 +21,14 @@ const AboutSection = () => {
           >
             About Melah Technologies
           </motion.h2>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
             Leading the way in innovative technology solutions since 2015
-          </motion.p>
+          </motion.p> */}
         </div>
         
         <div className="about-content">
@@ -59,7 +60,9 @@ const AboutSection = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="image-placeholder"></div>
+            <div className="image-placeholder">
+              <img src={image}  />
+            </div>
           </motion.div>
         </div>
       </div>

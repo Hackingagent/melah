@@ -14,7 +14,6 @@ const ContactSection = () => {
       <div className="container">
         <div className="section-header">
           <h2>Get In Touch</h2>
-          <p>We'd love to hear from you</p>
         </div>
         
         <div className="contact-content">
@@ -31,7 +30,7 @@ const ContactSection = () => {
               <FaPhone className="icon" />
               <div>
                 <h4>Phone</h4>
-                <p>+1 (234) 567-8900</p>
+                <p>+237670344547 / +237696013948</p>
               </div>
             </div>
             
@@ -39,7 +38,7 @@ const ContactSection = () => {
               <FaEnvelope className="icon" />
               <div>
                 <h4>Email</h4>
-                <p>info@melah-tech.com</p>
+                <p>info@melah.cm</p>
               </div>
             </div>
             
@@ -47,7 +46,7 @@ const ContactSection = () => {
               <FaMapMarkerAlt className="icon" />
               <div>
                 <h4>Address</h4>
-                <p>123 Tech Street, Digital City, DC 10001</p>
+                <p>Sonac Street Bamenda</p>
               </div>
             </div>
             

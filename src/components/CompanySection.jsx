@@ -12,7 +12,6 @@ const CompanySection = () => {
       <div className="container">
         <div className="section-header">
           <h2>Our Company</h2>
-          <p>Building the future of technology together</p>
         </div>
         
         <div className="company-content">

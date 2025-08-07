@@ -7,23 +7,23 @@ import ContactSection from '../components/ContactSection';
 const Home = () => {
   return (
     <div className="home-page">
-      <section id="home">
+      <section id="/home">
         <HeroSection />
       </section>
       
-      <section id="about">
+      <section id="/about">
         <AboutSection />
       </section>
       
-      <section id="services">
+      <section id="/services">
         <ServicesSection />
       </section>
       
-      <section id="company">
+      <section id="/company">
         <CompanySection />
       </section>
       
-      <section id="contact">
+      <section id="/contact">
         <ContactSection />
       </section>
     </div>

@@ -69,14 +69,14 @@ const ServicesSection = () => {
           >
             Our Services
           </motion.h2>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
             Comprehensive technology solutions for your business
-          </motion.p>
+          </motion.p> */}
         </div>
         
         <motion.div 
