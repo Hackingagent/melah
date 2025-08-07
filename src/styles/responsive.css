@@ -1,0 +1,119 @@
+/* Responsive adjustments for different screen sizes */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  /* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) {
+    .container {
+      max-width: 720px;
+    }
+    
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-content,
+    .contact-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+      order: -1;
+      max-width: 500px;
+      margin: 0 auto 30px;
+    }
+  }
+  
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+    .container {
+      max-width: 540px;
+    }
+    
+    .menu-toggle {
+      display: block;
+    }
+    
+    .nav {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: var(--white);
+      transition: left 0.3s ease;
+      padding: 20px;
+    }
+    
+    .nav.open {
+      left: 0;
+    }
+    
+    .nav ul {
+      flex-direction: column;
+    }
+    
+    .nav ul li {
+      margin: 15px 0;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .btn {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .container {
+      padding: 0 15px;
+    }
+    
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+    }
+    
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+    
+    .service-card,
+    .mission-card,
+    .vision-card,
+    .values-card {
+      padding: 20px;
+    }
+  }
