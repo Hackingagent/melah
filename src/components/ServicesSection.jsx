@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaCode, FaCloud, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaSearch, FaBullhorn, FaLaptop } from 'react-icons/fa';
+import { FaCartFlatbedSuitcase, FaChildren } from 'react-icons/fa6';
 
 const services = [
   {
@@ -41,6 +42,11 @@ const services = [
     icon: <FaLaptop />,
     title: "Computer Training",
     description: "Boost your skills with our computer training. We offer personalized lessons in software, programming, and digital literacy to help you excel in the digital landscape!"
+  },
+  {
+    icon: <FaChildren />,
+    title: "Community Building",
+    description: "Organizing free Computer classes for kids to learn computer skills for free during their holiday period"
   }
 ];
 

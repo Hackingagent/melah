@@ -24,11 +24,11 @@ const Footer = () => {
           >
             <h3>Melah Information Technologies</h3>
             <p>Innovative solutions for your digital transformation needs.</p>
-            <div className="social-links">
+            {/* <div className="social-links">
               <a href="#"><FaLinkedin /></a>
               <a href="#"><FaTwitter /></a>
               <a href="#"><FaFacebook /></a>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div 
