@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaCode, FaCloud, FaMobile, FaDatabase, FaShieldAlt, FaChartLine } from 'react-icons/fa';
+import { FaCode, FaCloud, FaMobile, FaDatabase, FaShieldAlt, FaChartLine, FaSearch, FaBullhorn, FaLaptop } from 'react-icons/fa';
 
 const services = [
   {
@@ -8,9 +8,9 @@ const services = [
     description: "Tailored software solutions designed to meet your specific business requirements."
   },
   {
-    icon: <FaCloud />,
-    title: "Cloud Solutions",
-    description: "Scalable and secure cloud services to optimize your business operations."
+    icon: <FaSearch />,
+    title: "Search Engine Optimization",
+    description: "Our SEO services are designed to enhance your online visibility and drive organic traffic to your website"
   },
   {
     icon: <FaMobile />,
@@ -31,6 +31,16 @@ const services = [
     icon: <FaChartLine />,
     title: "IT Consulting",
     description: "Expert guidance to align your technology with business goals."
+  },
+  {
+    icon: <FaBullhorn />,
+    title: "Digital Marketing",
+    description: "Elevate your brand with our digital marketing services. We specialize in social media management, content creation, and targeted advertising to engage your audience and enhance your online presence"
+  },
+  {
+    icon: <FaLaptop />,
+    title: "Computer Training",
+    description: "Boost your skills with our computer training. We offer personalized lessons in software, programming, and digital literacy to help you excel in the digital landscape!"
   }
 ];
 

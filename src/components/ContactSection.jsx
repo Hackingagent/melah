@@ -30,7 +30,7 @@ const ContactSection = () => {
               <FaPhone className="icon" />
               <div>
                 <h4>Phone</h4>
-                <p>+237670344547 / +237696013948</p>
+                <p>+237670344547  +237696013948</p>
               </div>
             </div>
             
@@ -54,7 +54,7 @@ const ContactSection = () => {
               <FaClock className="icon" />
               <div>
                 <h4>Working Hours</h4>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>24 hours</p>
               </div>
             </div>
           </motion.div>

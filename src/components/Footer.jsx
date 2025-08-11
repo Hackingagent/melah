@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Melah Information Technologies Co. LTD. All rights reserved.</p>
+          <p>&copy; 2024 Melah Information Technologies Co. LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>

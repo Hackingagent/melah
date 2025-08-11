@@ -24,8 +24,10 @@ const CompanySection = () => {
           >
             <h3>Mission</h3>
             <p>
-              To empower businesses through innovative technology solutions that drive growth, 
-              efficiency, and competitive advantage in an ever-evolving digital landscape.
+              To help Small and medium-sized businesses to achieve their online marketing goals and 
+              grow their businesses through our expertise in digital marketing services, tailored
+              to unique needs of each clients, and to help businesses achieve their full
+              potential in the digital landscape
             </p>
           </motion.div>
           
@@ -38,8 +40,11 @@ const CompanySection = () => {
           >
             <h3>Vision</h3>
             <p>
-              To be recognized globally as a leader in technology innovation, known for our 
-              commitment to excellence, integrity, and transformative digital solutions.
+              Our vision at Melah Information Technologies is to be the trusted partner for
+              businesses seeking ti navigate the complexities of digital marketing. <br />
+
+              We aim to deliver exceptional results, building a long-term relationships,
+              and contribute to the growth and success of our clients.
             </p>
           </motion.div>
           
@@ -50,7 +55,12 @@ const CompanySection = () => {
             transition={{ delay: 0.6, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3>Values</h3>
+            <h3>Philosophy</h3>
+
+            <p>The Cornerstone of any successful business is its ability to 'listen and learn' with it's customers</p>
+            <br />
+
+            <b>At Melah Info Tech we are committed to growing with our clients by:</b>
             <ul>
               <li>Innovation and Creativity</li>
               <li>Client-Centric Approach</li>
