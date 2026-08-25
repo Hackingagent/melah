@@ -8,6 +8,7 @@ import Grievance from './pages/Grievance';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import CodeOfBusiness from './pages/CodeOfBusiness';
+import Blog from './pages/Blog';
 import ScrollToTop from './components/ScrollToTop';
 import './styles/main.css';
 import './styles/animations.css';
@@ -26,6 +27,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/code-of-business" element={<CodeOfBusiness />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Router>

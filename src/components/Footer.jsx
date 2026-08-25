@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const footerLinks = [
+    { path: '/blog', name: 'Insights & Blog' },
     { path: '/disclaimer', name: 'Disclaimer' },
     { path: '/grievance', name: 'Grievance' },
     { path: '/privacy-policy', name: 'Privacy Policy' },
@@ -61,15 +62,15 @@ const Footer = () => {
           >
             <h3>Contact Us</h3>
             <ul className="contact-info">
-              <li><FaPhone /> +237670344547 / +237696013948 </li>
+              <li><FaPhone /> +237670344547</li>
               <li><FaEnvelope /> info@melah.cm</li>
-              <li><FaMapMarkerAlt /> Sonac Street Bamenda</li>
+              <li><FaMapMarkerAlt /> Meta Quarter Bamenda</li>
             </ul>
           </motion.div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Melah Information Technologies Co. LTD. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Melah Information Technologies Co. LTD. All rights reserved.</p>
         </div>
       </div>
     </footer>
