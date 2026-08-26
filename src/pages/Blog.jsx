@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowRight, FaCalendarAlt, FaClock, FaImage, FaPlus, FaTimes } from 'react-icons/fa';
+import { useAdmin } from '../context/AdminContext';
 
 const storageKey = 'melah-blog-posts';
 
@@ -9,6 +10,7 @@ const Blog = () => {
   const [isComposerOpen, setIsComposerOpen] = useState(false);
   const [selectedPost, setSelectedPost] = useState(null);
   const [form, setForm] = useState({ title: '', category: 'Technology', excerpt: '', content: '', author: '', image: '' });
+  const { isAdmin } = useAdmin();
 
   useEffect(() => {
     try {
@@ -64,7 +66,7 @@ const Blog = () => {
             <h1>Ideas for the connected<br />future.</h1>
             <p>Perspectives on technology, transformation and the work that moves organisations forward.</p>
           </div>
-          <button className="publish-button" onClick={() => setIsComposerOpen(true)}><FaPlus /> Publish a post</button>
+          {isAdmin && <button className="publish-button" onClick={() => setIsComposerOpen(true)}><FaPlus /> Publish a post</button>}
         </div>
       </section>
 
@@ -86,13 +88,13 @@ const Blog = () => {
                 <div className="post-card-copy"><span className="post-category">{post.category}</span><h3>{post.title}</h3><p>{post.excerpt}</p><PostMeta post={post} /><button className="read-link" onClick={() => setSelectedPost(post)}>Read article <FaArrowRight /></button></div>
               </motion.article>
             ))}</div></>}
-        </> : <section className="empty-blog"><span className="eyebrow">Your publication</span><h2>Your first insight starts here.</h2><p>Share company news, expert perspectives and technology updates with your audience.</p><button className="publish-button" onClick={() => setIsComposerOpen(true)}><FaPlus /> Publish your first post</button></section>}
+        </> : <section className="empty-blog"><span className="eyebrow">Your publication</span><h2>Your first insight starts here.</h2><p>Share company news, expert perspectives and technology updates with your audience.</p>{isAdmin && <button className="publish-button" onClick={() => setIsComposerOpen(true)}><FaPlus /> Publish your first post</button>}</section>}
       </section>
 
       <section className="newsletter-band"><div className="container"><span className="eyebrow">Stay informed</span><h2>Technology changes quickly.<br />Keep the useful ideas close.</h2><a href="mailto:info@melah.cm?subject=Subscribe%20to%20Melah%20Insights" className="newsletter-link">Subscribe to insights <FaArrowRight /></a></div></section>
 
       <AnimatePresence>
-        {isComposerOpen && <Composer form={form} updateField={updateField} handleImage={handleImage} publishPost={publishPost} close={() => setIsComposerOpen(false)} />}
+        {isAdmin && isComposerOpen && <Composer form={form} updateField={updateField} handleImage={handleImage} publishPost={publishPost} close={() => setIsComposerOpen(false)} />}
         {selectedPost && <ArticleModal post={selectedPost} close={() => setSelectedPost(null)} />}
       </AnimatePresence>
     </main>

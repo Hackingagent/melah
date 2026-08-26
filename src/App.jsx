@@ -10,12 +10,14 @@ import TermsOfService from './pages/TermsOfService';
 import CodeOfBusiness from './pages/CodeOfBusiness';
 import Blog from './pages/Blog';
 import ScrollToTop from './components/ScrollToTop';
+import { AdminProvider } from './context/AdminContext';
 import './styles/main.css';
 import './styles/animations.css';
 import './styles/responsive.css';
 
 function App() {
   return (
+    <AdminProvider>
     <Router>
       <ScrollToTop />
       <Header />
@@ -31,6 +33,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+    </AdminProvider>
   );
 }
 
