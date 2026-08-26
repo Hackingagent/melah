@@ -74,6 +74,7 @@ const Header = () => {
     { id: 'about', name: 'About' },
     { id: 'services', name: 'Services' },
     { id: 'company', name: 'Company' },
+    { id: 'blog', name: 'Blog', path: '/blog' },
     { id: 'contact', name: 'Contact Us' }
   ];
 
@@ -105,19 +106,29 @@ const Header = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
               >
-                <button 
-                  className={`nav-link ${activeSection === item.id && location.pathname === '/' ? 'active' : ''}`}
-                  onClick={() => handleNavClick(item.id)}
-                >
-                  {item.name}
-                  {activeSection === item.id && location.pathname === '/' && (
-                    <motion.span 
-                      className="nav-indicator"
-                      layoutId="nav-indicator"
-                      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                    />
-                  )}
-                </button>
+                {item.path ? (
+                  <Link
+                    to={item.path}
+                    className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                    onClick={closeMenu}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <button
+                    className={`nav-link ${activeSection === item.id && location.pathname === '/' ? 'active' : ''}`}
+                    onClick={() => handleNavClick(item.id)}
+                  >
+                    {item.name}
+                    {activeSection === item.id && location.pathname === '/' && (
+                    <motion.span
+                        className="nav-indicator"
+                        layoutId="nav-indicator"
+                        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                      />
+                    )}
+                  </button>
+                )}
               </motion.li>
             ))}
           </ul>
