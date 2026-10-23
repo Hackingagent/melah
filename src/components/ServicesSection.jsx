@@ -47,6 +47,11 @@ const services = [
     icon: <FaChildren />,
     title: "Community Building",
     description: "Organizing free Computer classes for kids to learn computer skills for free during their holiday period"
+  },
+  {
+    icon: <FaCartFlatbedSuitcase/>,
+    title: "D-U-N-S NUMBER REGISTRATION ASSISTANCE",
+    description: "Melah Information Technologies assists businesses in applying for a D-U-N-S Number, a unique 9-digit business identifier issued by Dun & Bradstreet. Note: D-U-N-S Numbers are issued by Dun & Bradstreet. Melah provides application assistance."
   }
 ];
 
